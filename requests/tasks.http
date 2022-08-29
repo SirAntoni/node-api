@@ -1,0 +1,27 @@
+GET http://localhost:3000/
+###
+GET http://localhost:3000/api/tasks
+###
+GET http://localhost:3000/api/tasks?size=7&page=1
+###
+GET http://localhost:3000/api/tasks/done
+###
+GET http://localhost:3000/api/tasks/630c3117307c136a67ec2df1a
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title":"Hacer un sitio web en angular",
+    "description":"Trabajo de freelance"
+}
+###
+DELETE http://localhost:3000/api/tasks/630c1a3e50a02718b9d1ec0a
+###
+PUT http://localhost:3000/api/tasks/630c1a8350a02718b9d1ec0c
+Content-Type: application/json
+
+{
+    "title":"Hacer un sitio web en PRUEBAS",
+    "description":"Trabajo de freelance"
+}
